@@ -1,0 +1,11 @@
+如果可以,安装supervisor工具 可以监听代码的变化进行node服务的重启!
+1.安装express: npm install -g express
+2.由于命令功能从express中独立出来,需要单独安装命令工具包:npm install -g express-generator
+3.在文件目录下生成项目基本机构:分为ejs和jade模板两种
+   3.1 安装jade模板:express -t ejs microblog最终安装的还是jade模板
+   3.2 安装ejs模板:express -e microblog安装的就是ejs模板
+4.进入microblog目录,执行:npm install
+5.执行node app.js 或者npm start 或者supervisor ./bin/www 启动项目
+6.在浏览器中输入:localhost:3000 即可看到项目的最初效果
+
+下面是进一步完善这个微博项目:
